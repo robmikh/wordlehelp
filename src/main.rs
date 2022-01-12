@@ -40,21 +40,3 @@ fn remove_words_with_chars<'a>(words: Vec<&'a str>, chars: &[char]) -> Vec<&'a s
     }
     filtered_words
 }
-
-//fn filter_to_five_letter_words(lines: std::io::Lines<std::io::BufReader<std::fs::File>>) -> Vec<String> {
-//    let mut words = Vec::new();
-//    for line in lines {
-//        if let Ok(line) = line {
-//            if line.len() == 5 {
-//                words.push(line.to_lowercase());
-//            }
-//        }
-//    }
-//    words
-//}
-//
-//fn read_lines<P: AsRef<Path>>(path: P) -> Result<std::io::Lines<std::io::BufReader<std::fs::File>>, std::io::Error> {
-//    let file = std::fs::File::open(path)?;
-//    let lines = std::io::BufReader::new(file).lines();
-//    Ok(lines)
-//}
