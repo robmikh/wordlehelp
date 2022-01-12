@@ -1,7 +1,9 @@
 [package]
 name = "wordlehelp"
 version = "0.1.0"
+authors = ["robmikh <rob.mikh@outlook.com>"]
+description = "At tool to help you play Wordle."
 edition = "2021"
 
 [dependencies]
-
+clap = { version = "3.0.6", features = ["derive"] }
