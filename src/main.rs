@@ -66,7 +66,7 @@ fn filter_words_with_char_and_position<'a>(
 fn remove_words_without_chars<'a>(words: Vec<&'a str>, chars: &[char]) -> Vec<&'a str> {
     let mut filtered_words = Vec::new();
     for word in words {
-        if word.contains(chars) {
+        if word.chars().all(|x| chars.contains(&x)) {
             filtered_words.push(word);
         }
     }
